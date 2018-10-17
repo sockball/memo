@@ -74,3 +74,6 @@ vim /etc/passwd
 `git log --pretty=oneline filename`
 * 假定忽略选项： `--assume-unchanged`
 * 跳过工作树选项： `--skip-worktree` [以上2个选项参考](https://www.zhihu.com/question/25234996)
+* `git push error`:`Failed to connect to 127.0.0.1 port #port`  
+  检查端口占用 `lsof -i:#port`  
+  检查代理 `env | grep -i proxy` 然后`unset`掉
