@@ -17,3 +17,18 @@
     ```
     设置host文件 `vim /etc/hosts/` 然后`192.168.30.107:8080`可访问...  
     首次登陆设置密码及邮箱 管理员账号为`root`
+    
+* centos 安装gitlab [官网](https://about.gitlab.com/installation/#centos-6)  
+Add the GitLab package repository and install the package  
+`curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
+`
+以本地8070端口为例 (gitlab工作端口)
+`sudo EXTERNAL_URL="http://127.0.0.1:8070" yum -y install gitlab-ee
+`  
+默认服务使用端口8080 可以更改配置文件的`unicorn['port']`选项至其他端口 如8050  
+`vim /etc/gitlab/gitlab.rb`  
+nginx代理到8070(gitlab工作端口)  
+`proxy_pass http://127.0.0.1:8070`  
+更改配置后需要reconfigure    
+`gitlab-ctl reconfigure`  
+基本命令 `start` `stop` `restart`
