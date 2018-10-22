@@ -1,0 +1,72 @@
+# 与docker-compose版本匹配
+version: '2'
+services:
+  php7.2:
+    build: .
+    # 通过该name配置nginx：fastcgi_pass fpm:9000;  mysql同理
+    container_name: fpm
+    volumes:
+      - ./www/:/var/www/html/:rw
+      - ./conf/php.ini:/usr/local/etc/php/php.ini:ro
+      - ./conf/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ./logs/:/var/log/docker:rw
+    restart: always
+    expose:
+      - '9000'
+    # cap_add:
+    #   - SYS_PTRACE
+    # 更多CAP权限 @see http://man7.org/linux/man-pages/man7/capabilities.7.html
+    #
+    # links:
+    #  - mysql:mysql
+    # 替代links连接各容器
+    networks:
+      - net-mysql
+      - net-php
+
+  # alpine镜像通过sh进入伪终端 docker exec -ti nginx sh
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./www/:/var/www/html/:rw
+      - ./conf/nginx-vhost:/etc/nginx/conf.d/:rw
+      - ./conf/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./logs/:/var/log/docker/:rw
+    restart: always
+    # links:
+    #  - php7.2:fpm
+    networks:
+      - net-php
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    # command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./conf/mysql.cnf:/etc/mysql/conf.d/mysql.cnf:ro
+    restart: always
+    networks:
+      - net-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: '1234567'
+
+  adminer:
+    image: adminer:4.6.3
+    container_name: adminer
+    ports:
+      - '8080:8080'
+    restart: always
+    networks:
+      - net-mysql
+    environment:
+      ADMINER_DESIGN: 'lucas-sandery'
+
+networks:
+  net-mysql:
+  net-php:

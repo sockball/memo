@@ -33,6 +33,8 @@
 * [http状态码](https://www.cmsky.com/http-status-code/)
 * [阻塞、非阻塞、同步、异步](https://www.zhihu.com/question/19732473/answer/23434554)
 * [JavaScript 内存泄漏教程](http://www.ruanyifeng.com/blog/2017/04/memory-leak.html)
+* [JS base64数据转blob对象](https://stackoverflow.com/questions/16245767/creating-a-blob-from-a-base64-string-in-javascript#)
+* [Docker100问](https://blog.lab99.org/post/docker-2016-07-14-faq.html)
 
 ## Other
 * [谷歌云申请](https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/)

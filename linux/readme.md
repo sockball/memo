@@ -43,3 +43,23 @@
 * 查看内核 `uname -a` `cat /proc/version`
 * 查看发行版信息 `cat /etc/issue`
 * 更改ssh登录端口 `vim /etc/ssh/sshd_config` && `systemctl restart sshd.service`
+* 尝试ssh登录日志   
+`/var/log/secure`  
+系统拒绝列表  
+`/etc/hosts.deny`  
+筛选后查看  
+`grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' /var/log/secure | sort | uniq `
+* 使用denyHosts([参考](http://blog.51cto.com/jin771998569/1633597))  
+```
+wget http://sourceforge.net/projects/denyhosts/files/denyhosts/2.6/DenyHosts-2.6.tar.gz | tar -zxf
+cd DenyHosts-2.6
+python setup.py install
+
+# 默认安装路径
+cd /usr/share/denyhosts/
+# 配置文件
+cp denyhosts.cfg-dist denyhosts.cfg
+vim denyhosts.cfg
+cp daemon-control-dist denyhosts
+./denyhosts start
+```
