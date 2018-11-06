@@ -11,7 +11,7 @@
             --name gitlab \
             --restart always \
             -v $GITLAB_HOME/config:/etc/gitlab \
-        -v $GITLAB_HOME/logs:/var/log/gitlab \
+            -v $GITLAB_HOME/logs:/var/log/gitlab \
             -v $GITLAB_HOME/data:/var/opt/gitlab \
             beginor/gitlab-ce:11.3.0-ce.0
     ```

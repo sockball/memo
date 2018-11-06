@@ -77,3 +77,7 @@ vim /etc/passwd
 * `git push error`:`Failed to connect to 127.0.0.1 port #port`  
   检查端口占用 `lsof -i:#port`  
   检查代理 `env | grep -i proxy` 然后`unset`掉
+  
+* 一个push error `fatal: The remote end hung up unexpectedly`  
+文件过大上传失败...[参考](https://stackoverflow.com/questions/6842687/the-remote-end-hung-up-unexpectedly-while-git-cloning)  
+`git config http.postBuffer 524288000`

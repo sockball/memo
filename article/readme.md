@@ -35,6 +35,8 @@
 * [JavaScript 内存泄漏教程](http://www.ruanyifeng.com/blog/2017/04/memory-leak.html)
 * [JS base64数据转blob对象](https://stackoverflow.com/questions/16245767/creating-a-blob-from-a-base64-string-in-javascript#)
 * [Docker100问](https://blog.lab99.org/post/docker-2016-07-14-faq.html)
+* [你可能不知道的14个JavaScript调试技巧](https://segmentfault.com/a/1190000016841971)
+* [ipv6是什么](https://zhuanlan.zhihu.com/p/36542469)
 
 ## Other
 * [谷歌云申请](https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/)
@@ -58,7 +60,7 @@
 * [2018微信支付漏洞](https://mp.weixin.qq.com/s/zS-_qdVV_39Jd1TT3RkfNA)
 * [自行车棚问题](https://juejin.im/post/5aa882eaf265da23923607bd)
 * [为什么所有主要浏览器的 User-Agent 都是 Mozilla/x.0 开头](https://www.zhihu.com/question/19553117/answer/114306637)
-
+* [Why the world’s flight paths are such a mess](https://multimedia.scmp.com/news/world/article/2165980/flight-paths/index.html)
 ## To Read
 * [Linux就该这么学](https://www.linuxprobe.com/chapter-07.html)
 * [Yii相关](http://www.kkh86.com/it/yii2-adv/guide-email-usage.html)
