@@ -18,10 +18,12 @@ Yii下使用workerman tcp长连接示例
 ```
 
 console启动类
-对于命令`./yii socket/server start d`(应考虑此处如何将`-d`直接传入...)  
+对于命令`./yii socket/server start -d`  
 `$argv[0]`为`./yii`   
 `$argv[1]`为`socket/server`  
-`start`和`d`均在$options中
+`$argv[2]`为`start`
+`$argv[3]`为`-d`
+
 ```
 namespace console\controllers;
 
@@ -30,25 +32,45 @@ use yii\console\Controller;
 use yii\helpers\Console;
 
 /**
- * socket连接 单个字符被认为是附加选项 如 d 代表 -d 守护进程启动
- * 命令以 (php) ./yii socket/server 开头 以下为选项
- * start 挂起一个socket连接; start d 守护进程挂起; stop 停止;
+ * socket连接
+ * 命令以 (php) ./yii socket/server 开头 以下为operator
+ * start 挂起一个socket连接; -d 以守护进程挂起; stop 停止;
  * status 查看状态; restart 重启; reload 平滑重启; connections 查看连接状态
  *
- * @see http://doc3.workerman.net/315117
+ * @see http://doc.workerman.net/install/start-and-stop.html
  */
 class SocketController extends Controller
 {
-    public function actionServer(...$options)
+    public $daemon;
+    public $help;
+    public $gracefully;
+    // 设置后可省略命令为 './yii socket start -d'
+    public $defaultAction = 'server';
+
+    public function init()
     {
         global $argv;
+        // 去除多余的$argv[0] yii
+        array_shift($argv);
+    }
 
-        $argv = [0 => "{$argv[0]} {$argv[1]}"];
-        $argv = array_merge($argv, array_map(function ($v) {
-            return strlen($v) == 1 ? "-{$v}" : $v;
-        }, $options));
+    public function actionServer()
+    {
+        Yii::$app->socket->run();
+    }
 
-        Yii::$app->socket->initWorker();
+    public function options($actionID = '')
+    {
+        return ['daemon', 'gracefully', 'help'];
+    }
+
+    public function optionAliases()
+    {
+        return [
+            'd' => 'daemon',
+            'g' => 'gracefully',
+            'h' => 'help'
+        ];
     }
 }
 ```

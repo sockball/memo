@@ -37,6 +37,8 @@
 * [Docker100问](https://blog.lab99.org/post/docker-2016-07-14-faq.html)
 * [你可能不知道的14个JavaScript调试技巧](https://segmentfault.com/a/1190000016841971)
 * [ipv6是什么](https://zhuanlan.zhihu.com/p/36542469)
+* [Web Performance(Web优化)](https://3perf.com/talks/web-perf-101)
+* [yield](http://www.php20.cn/article/148)
 
 ## Other
 * [谷歌云申请](https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/)
@@ -48,7 +50,9 @@
 * [sudo免密](http://guochenglai.com/2016/05/30/mac-ubuntu-linux-sudo-nopass/)
 * [IM软件专栏](https://blog.csdn.net/column/details/im-hherima.html)
 * [通讯协议与及时通讯](https://www.jianshu.com/p/ca4aeabf55f6)
-
+* [VPS搜索工具](https://anothervps.com/vps/)
+* [.new域名](https://www.theverge.com/2018/10/25/18024918/google-new-shortcut-g-suite-apps-docs-sheets) [参考]([1](http://www.ruanyifeng.com/blog/2018/11/weekly-issue-31.html))新闻第五小节
+* [符号清单(Unicode, Html等)](https://www.toptal.com/designers/htmlarrows/)
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)
 * [银行家舍入](https://www.insp.top/article/how-to-ensure-accurate-for-digital-transformation)
@@ -61,6 +65,9 @@
 * [自行车棚问题](https://juejin.im/post/5aa882eaf265da23923607bd)
 * [为什么所有主要浏览器的 User-Agent 都是 Mozilla/x.0 开头](https://www.zhihu.com/question/19553117/answer/114306637)
 * [Why the world’s flight paths are such a mess](https://multimedia.scmp.com/news/world/article/2165980/flight-paths/index.html)
+* [Web前端开发评测系统](http://scriptoj.mangojuice.top/)
+* [纸飞机](https://www.foldnfly.com)
+
 ## To Read
 * [Linux就该这么学](https://www.linuxprobe.com/chapter-07.html)
 * [Yii相关](http://www.kkh86.com/it/yii2-adv/guide-email-usage.html)
