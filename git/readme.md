@@ -37,7 +37,8 @@ git push -u origin --tags
 * 删除master分支 (其他分支同理)  
 `git branch -D master #先切换成其他分支且设置default分支为其他`  
 `git push origin :master`
-* 服务器创建git仓库
+* 服务器创建git仓库  
+[centos7.4开始废除 RSAAuthentication选项](https://www.cnblogs.com/Leroscox/p/9627809.html)
 ```
 //建立git用账号 (实际不应使用git作为用户名
 useradd git

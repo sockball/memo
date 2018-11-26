@@ -39,6 +39,7 @@
 * [ipv6是什么](https://zhuanlan.zhihu.com/p/36542469)
 * [Web Performance(Web优化)](https://3perf.com/talks/web-perf-101)
 * [yield](http://www.php20.cn/article/148)
+* [file_exists与权限问题](https://www.cnblogs.com/baochuan/archive/2012/05/06/2445822.html)
 
 ## Other
 * [谷歌云申请](https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/)
@@ -53,6 +54,7 @@
 * [VPS搜索工具](https://anothervps.com/vps/)
 * [.new域名](https://www.theverge.com/2018/10/25/18024918/google-new-shortcut-g-suite-apps-docs-sheets) [参考]([1](http://www.ruanyifeng.com/blog/2018/11/weekly-issue-31.html))新闻第五小节
 * [符号清单(Unicode, Html等)](https://www.toptal.com/designers/htmlarrows/)
+
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)
 * [银行家舍入](https://www.insp.top/article/how-to-ensure-accurate-for-digital-transformation)
