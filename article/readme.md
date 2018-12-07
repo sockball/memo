@@ -55,6 +55,7 @@
 * [.new域名](https://www.theverge.com/2018/10/25/18024918/google-new-shortcut-g-suite-apps-docs-sheets) [参考]([1](http://www.ruanyifeng.com/blog/2018/11/weekly-issue-31.html))新闻第五小节
 * [符号清单(Unicode, Html等)](https://www.toptal.com/designers/htmlarrows/)
 * [时间复杂度与空间复杂度](https://blog.csdn.net/ialexanderi/article/details/78945951)
+* [一些免费启动页模板](https://cruip.com/)
 
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)
@@ -70,6 +71,7 @@
 * [Why the world’s flight paths are such a mess](https://multimedia.scmp.com/news/world/article/2165980/flight-paths/index.html)
 * [Web前端开发评测系统](http://scriptoj.mangojuice.top/)
 * [纸飞机](https://www.foldnfly.com)
+* [Youtube教育频道翻译小组](https://crashcourse.club/)
 
 ## To Read
 * [Linux就该这么学](https://www.linuxprobe.com/chapter-07.html)

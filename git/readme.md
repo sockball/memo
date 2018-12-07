@@ -82,3 +82,5 @@ vim /etc/passwd
 * 一个push error `fatal: The remote end hung up unexpectedly`  
 文件过大上传失败...[参考](https://stackoverflow.com/questions/6842687/the-remote-end-hung-up-unexpectedly-while-git-cloning)  
 `git config http.postBuffer 524288000`
+
+* `git cherry-pick [commit_hash]` 使用cheery-pick选取某分支的一个commit进行提交

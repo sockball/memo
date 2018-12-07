@@ -60,3 +60,14 @@ server {
     }
 }
 ```
+
+* 使用`proxy_pass`并且location按照`^~`匹配时, `url`后加入`/`则相当于此时匹配的`uri`为根路径, `nginx`不会把匹配的部分代理上  
+    如
+    ```$xslt
+    location ^~ /api {
+        proxy_pass http:127.0.0.1:8070/
+    }
+    ```
+    请求`http://server/api`时代理成`127.0.0.1:8070`而不是`127.0.0.1:8070/api`  
+    [参考](http://www.cnblogs.com/AloneSword/p/3673829.html)
+    

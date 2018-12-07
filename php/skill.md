@@ -2,3 +2,5 @@
 ```
 private function __construct() {}
 ```
+
+* 守护进程开启redis后 可进入redis-cli执行`shutdown`命令关闭
