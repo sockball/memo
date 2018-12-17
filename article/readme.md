@@ -56,6 +56,7 @@
 * [符号清单(Unicode, Html等)](https://www.toptal.com/designers/htmlarrows/)
 * [时间复杂度与空间复杂度](https://blog.csdn.net/ialexanderi/article/details/78945951)
 * [一些免费启动页模板](https://cruip.com/)
+* [免费CDN](https://www.netlify.com/)
 
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)

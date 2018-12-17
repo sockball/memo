@@ -64,3 +64,6 @@ vim denyhosts.cfg
 cp daemon-control-dist denyhosts
 ./denyhosts start
 ```
+
+* `ps` 常用选项 `ps -aux`
+* `netstat` 常用选项 `netstat -anp`
