@@ -6,10 +6,11 @@
 * [官方类参考](https://www.yiiframework.com/doc/api/2.0)
 * **Yii学习**
     * [console控制台](https://segmentfault.com/a/1190000013364677)
-    * [log配置](https://nai8.me/article/309?title=%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E8%B4%B4%E5%BF%83%E7%9A%84log)
+    * [log配置](https://nai8.me/article/309?title=%E9%85%8D%E7%BD%AE%E4%B8%80%E4%B8%AA%E8%B4%B4%E5%BF%83%E7%9A%84log)(暂损)
     * [ActiveForm异步验证](http://www.manks.top/yii2_modal_activeform_ajax.html)
     * [清除数据库缓存](https://blog.csdn.net/lhorse003/article/details/70244944)
     * [scenario场景](https://nai8.me/forum/detail.html?id=148)(暂损)
+
 ## Sundry
 * [HTTP 协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)
 * [HTTPS 升级指南](http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html)
@@ -40,6 +41,11 @@
 * [Web Performance(Web优化)](https://3perf.com/talks/web-perf-101)
 * [yield](http://www.php20.cn/article/148)
 * [file_exists与权限问题](https://www.cnblogs.com/baochuan/archive/2012/05/06/2445822.html)
+* [Vue-elementui上传](https://www.cnblogs.com/goloving/p/8967865.html)
+* [php-excel新选择spout](https://laravel-china.org/articles/20247)
+* [icon图标](https://segmentfault.com/a/1190000012213278)
+* [debug javascript with chrome devtools](https://codeburst.io/learn-how-to-debug-javascript-with-chrome-devtools-9514c58479db)
+* [Linux命令搜索引擎](https://wangchujiang.com/linux-command/)
 
 ## Other
 * [谷歌云申请](https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/)
@@ -57,6 +63,9 @@
 * [时间复杂度与空间复杂度](https://blog.csdn.net/ialexanderi/article/details/78945951)
 * [一些免费启动页模板](https://cruip.com/)
 * [免费CDN](https://www.netlify.com/)
+* [Linux内核揭秘](https://xinqiu.gitbooks.io/linux-insides-cn/content/index.html)
+* [2018开源事件](https://mp.weixin.qq.com/s/iMfYX-FPA9MVJywW6hfFCA)
+* [多人在线白板](https://wbo.openode.io/)
 
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)
@@ -73,6 +82,11 @@
 * [Web前端开发评测系统](http://scriptoj.mangojuice.top/)
 * [纸飞机](https://www.foldnfly.com)
 * [Youtube教育频道翻译小组](https://crashcourse.club/)
+* [IPV6圣诞树](https://hackaday.com/2018/12/24/ipv6-christmas-display-uses-75-internets-worth-of-addresses/)
+* [创业6年，我犯过的几个高级错误与常识性错误](https://news.cnblogs.com/n/617541/)
+* [渐变色示例](https://uigradients.com/)
+* [查看全球风向](https://earth.nullschool.net/)
+* [period的其他用法](http://www.sohu.com/a/251066224_642305)
 
 ## To Read
 * [Linux就该这么学](https://www.linuxprobe.com/chapter-07.html)

@@ -67,3 +67,32 @@ cp daemon-control-dist denyhosts
 
 * `ps` 常用选项 `ps -aux`
 * `netstat` 常用选项 `netstat -anp`
+
+* 7个运行级别, `runlevel`可查看当前运行级别 (`init`即`/sbin/init`)  
+通过`/etc/inittab`文件可查看注释
+```
+0 系统停止
+1 单用户系统
+2 不带NFS的多用户系统 (Network File System, 即不带网络)
+3 完整多用户模式
+4 系统保留级别, 用户可自定义
+5 X11图形模式...
+6 重新启动系统
+```
+于是运行`init 6`可以使系统重启  
+标准的Linux运行级别为3或5  
+[参考](https://www.cnblogs.com/fps2tao/p/7573672.html)  
+`-----------------------------------------`  
+使用`systemd`的centos已弃用`inittab`  
+使用`targets`代替`runlevels`  
+默认有2个主要的`target`
+```
+multi-user.target: 类似inittab 3
+graphical.target: 类似inittab 5
+```
+
+* 命令加入开机自启动
+    * 编辑`/etc/rc.local`, 文件尾行加入命令, 如：  
+    `/usr/local/php/bin/php /data/wwwroot/app/yii socket start -d`
+    * 编写shell放至`/etc/init.d`下即会开机加载运行... (`/etc/init.d`为`/etc/rc.d/init.d`的软连接)
+    * 使用`chkconfig`将shell注册为系统服务

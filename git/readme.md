@@ -71,10 +71,15 @@ vim /etc/passwd
 `git rm -r --cached .`  
 或者删除具体某个要被忽略的文件的缓存  
 `git rm -r --cached xxx.doc `
+
 * 查看某一文件历史  
 `git log --pretty=oneline filename`
-* 假定忽略选项： `--assume-unchanged`
+
+* 假定忽略选项： `--assume-unchanged`  
+ex: `git update-index --assume-unchanged xxxx.conf`
+
 * 跳过工作树选项： `--skip-worktree` [以上2个选项参考](https://www.zhihu.com/question/25234996)
+
 * `git push error`:`Failed to connect to 127.0.0.1 port #port`  
   检查端口占用 `lsof -i:#port`  
   检查代理 `env | grep -i proxy` 然后`unset`掉
