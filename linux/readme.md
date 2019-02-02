@@ -96,3 +96,16 @@ graphical.target: 类似inittab 5
     `/usr/local/php/bin/php /data/wwwroot/app/yii socket start -d`
     * 编写shell放至`/etc/init.d`下即会开机加载运行... (`/etc/init.d`为`/etc/rc.d/init.d`的软连接)
     * 使用`chkconfig`将shell注册为系统服务
+    
+* mac不借助第三方实现NTFS分区的可写挂载...[参考](https://www.cnblogs.com/thatsit/p/6218117.html)
+```
+# 先卸载后挂载
+# 磁盘工具找到硬盘的设备名 此处为`disk4s2`
+
+# unmount 或选择推出...
+sudo umount /Volumes/disk4s2
+
+sudo mkdir /Volumes/kkk
+sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk4s2 /Volumes/kkk/
+open /Volumes/kkk
+```

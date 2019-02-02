@@ -187,3 +187,64 @@ SELECT
 FROM
 	format_menu
 ```
+
+* select查询时添加自定义字段且为固定值...  
+`SELECT *, 1 AS point FROM table `(添加一列名为point值都为1的列)
+
+* 5.7版本后子查询优化、子查询中先排序再分组失效...加上limit才有效  
+参考[提问1](https://segmentfault.com/q/1010000011383702), [提问2](https://segmentfault.com/q/1010000011303563/a-1020000011310865)  
+
+    [参考分析文章](https://www.cnblogs.com/ivictor/p/9281488.html) 
+举例说明  
+5.6之前的先排序后分组得到emp表中每个部门最高工资的雇员相关信息(目标行)
+
+```
+SELECT
+    deptno,ename,sal 
+FROM
+    ( SELECT * FROM emp ORDER BY sal DESC ) t 
+GROUP BY
+    deptno;
+```
+5.7后该方法不适用... 除非在`ORDER BY`后加上`LIMIT`
+
+[参考leetcode题目](https://leetcode-cn.com/problems/department-highest-salary/comments/)  
+参考上面文章得出的该题解答方法...
+```
+# Write your MySQL query statement below
+SELECT
+    D.Name AS Department,
+    E.Name AS Employee,
+    E.Salary
+FROM
+    Employee E
+INNER JOIN
+    Department D
+ON
+    E.DepartmentId = D.id
+INNER JOIN
+(
+    SELECT
+        DepartmentId Id,
+        max(Salary) Salary
+    FROM
+        Employee
+    GROUP BY
+        DepartmentId
+) tmp
+ON
+    D.Id = tmp.Id
+WHERE
+    E.Salary = tmp.Salary
+
+```
+
+`ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING`子句
+
+* `IFNUll`函数  
+`SELECT IFNULL((SELECT ...), NULL) AS result`
+
+* `DATEDIFF`函数比较2个`DATE`类型的值, 结果为前一个日期减去后一个日期的天数  
+`SELECT DATEDIFF('2018-08-07', '2018-08-08')`值为-1...
+
+* `HAVING`中`COUNT()`也能去重 `HAVING COUNT(DISTINCT column)`
