@@ -14,5 +14,12 @@
     background: #f0f3f9;
     color: #34538b;
 }
+```
 
+* `border`渐变，分别对应4个方向还有如`border-top-image`
+```
+.div {
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #000, #fff) 5 10
+}
 ```

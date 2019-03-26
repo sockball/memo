@@ -65,9 +65,13 @@ server {
     如
     ```$xslt
     location ^~ /api {
-        proxy_pass http:127.0.0.1:8070/
+        proxy_pass http://127.0.0.1:8070/
     }
     ```
     请求`http://server/api`时代理成`127.0.0.1:8070`而不是`127.0.0.1:8070/api`  
     [参考](http://www.cnblogs.com/AloneSword/p/3673829.html)
-    
+
+* [nginx介绍](https://www.cnblogs.com/wcwnina/p/8728391.html)  
+简单理解：
+    * 正向代理：代理客户端
+    * 反向代理：代理服务端

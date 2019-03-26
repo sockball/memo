@@ -41,6 +41,7 @@
 * [Web Performance(Web优化)](https://3perf.com/talks/web-perf-101)
 * [yield](http://www.php20.cn/article/148)
 * [file_exists与权限问题](https://www.cnblogs.com/baochuan/archive/2012/05/06/2445822.html)
+* [理清PHP在Linxu下执行时的文件权限](https://www.cnblogs.com/vishun/p/6950251.html)
 * [Vue-elementui上传](https://www.cnblogs.com/goloving/p/8967865.html)
 * [php-excel新选择spout](https://laravel-china.org/articles/20247)
 * [icon图标](https://segmentfault.com/a/1190000012213278)
@@ -66,6 +67,8 @@
 * [Linux内核揭秘](https://xinqiu.gitbooks.io/linux-insides-cn/content/index.html)
 * [2018开源事件](https://mp.weixin.qq.com/s/iMfYX-FPA9MVJywW6hfFCA)
 * [多人在线白板](https://wbo.openode.io/)
+* [github oauth授权范围scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/)
+* [ping工具](https://tools.ipip.net/ping.php)
 
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)
@@ -90,6 +93,7 @@
 * [period的其他用法](http://www.sohu.com/a/251066224_642305)
 * [2018十大最佳笔记本](https://www.techradar.com/news/mobile-computing/laptops/best-laptops-1304361)
 * [概念性页面加载动画](https://medium.com/@ann.green/loading-indicators-e9d9ac9680b)
+* [自动生成logo](https://mybrandnewlogo.com/)
 
 ## To Read
 * [Linux就该这么学](https://www.linuxprobe.com/chapter-07.html)

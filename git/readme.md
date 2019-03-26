@@ -75,8 +75,10 @@ vim /etc/passwd
 * 查看某一文件历史  
 `git log --pretty=oneline filename`
 
-* 假定忽略选项： `--assume-unchanged`  
-ex: `git update-index --assume-unchanged xxxx.conf`
+* 假定忽略选项： `--assume-unchanged`，还原：`--no-assume-unchanged` 
+e.g.:  
+`git update-index --assume-unchanged xxxx.conf`   
+`git update-index --no-assume-unchanged xxxx.conf`
 
 * 跳过工作树选项： `--skip-worktree` [以上2个选项参考](https://www.zhihu.com/question/25234996)
 
@@ -89,3 +91,13 @@ ex: `git update-index --assume-unchanged xxxx.conf`
 `git config http.postBuffer 524288000`
 
 * `git cherry-pick [commit_hash]` 使用cheery-pick选取某分支的一个commit进行提交
+
+* [参考](https://www.cnblogs.com/tocy/p/git-stash-reference.html)  
+`git stash` 当前工作目录贮存起来以待恢复  
+`git stash pop` 应用并删除第一个stash  
+`git stash apply`应用指定stash(不会删除, 默认stash@{0})  
+`git stash list`查看现有stash  
+`git stash drop stash@{0}`删除指定stash  
+`git stash clear`删除所有stash  
+`git stash show`查看指定stash file change  
+`git stash show -p`查看指定stash全部文件的diff

@@ -248,3 +248,5 @@ WHERE
 `SELECT DATEDIFF('2018-08-07', '2018-08-08')`值为-1...
 
 * `HAVING`中`COUNT()`也能去重 `HAVING COUNT(DISTINCT column)`
+
+* [EXPLAIN使用分析](https://segmentfault.com/a/1190000008131735#articleHeader5)

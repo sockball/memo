@@ -23,3 +23,5 @@
     4、编辑`/Applications/PhpStorm.app/Contents/bin/phpstorm.vmoptions`文件最后一行加入
     `-javaagent:/Applications/PhpStorm.app/Contents/lib/1.jar`  
     5、打开`PHPSTORM`选择`Activation code`输入`http://idea.lanyus.com/`获得的注册码
+
+* Mac认为已损坏的文件...使用命令`sudo spctl --master-disable`信任所有来源...
