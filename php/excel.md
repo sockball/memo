@@ -73,14 +73,21 @@ private static function setStyle($sheet, $headers)
     $rowCount = count($headers);
 
     // 设置全局水平、垂直居中
-    $sheet->getDefaultStyle()->getAlignment()->setHorizontal('center')->setVertical('center');
-    
-    // 设置单元格宽度
+    $sheet->getDefaultStyle()
+        ->getAlignment()
+        ->setHorizontal(Alignment::HORIZONTAL_CENTER)
+        ->setVertical(Alignment::VERTICAL_CENTER);
+    // 设置全局单元格宽度
+    $activeSheet->getDefaultColumnDimension()->setWidth(self::DEFAULT_CELL_WIDTH);
+
+    // 设置具体单元格宽度
+    /*
     $column = 'A';
     for ($i = 0; $i < $rowCount; $i++)
     {
         $activeSheet->getColumnDimension($column)->setWidth(self::DEFAULT_CELL_WIDTH);
         $column++;
     }
+    */
 }
 ```

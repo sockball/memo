@@ -172,3 +172,6 @@ function scrollToTop()
     ```
 
 * 使整个页面可编辑...`document.body.contentEditable='true'`
+
+* `window.btoa()` -- base64编码（中文直接编码会报错）  
+  `window.atob()` -- base64解码

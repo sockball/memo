@@ -9,10 +9,14 @@
     history -c
     rm -rf ~/.bash_history
     ```
-* vim普通模式下常用快捷键
+* vim命令模式下常用快捷键
 
     ```
-    dd #删除整行
+    dd #删除(剪切)整行
+    5dd #删除(剪切)光标处开始的5行
+    yy #复制光标所在整行
+    5yy ...
+    p 将yy或dd的内容粘贴至光标后
     / #开启查询
     n # /查询后 下一项匹配的内容
     N # /查询后 上一项匹配的内容
@@ -21,6 +25,7 @@
     u #撤销
     ctrl + r #恢复撤销
     :noh #消除搜索内容的高亮
+    u 撤销上一步操作
     ```
 * 增强vim功能, 编辑或新增`~/.vimrc`(或全局`/etc/vim/vimrc` `/etc/vimrc`)文件, `"`开始为注释, 退出该文件直接生效 ([更多](http://www.ruanyifeng.com/blog/2018/09/vimrc.html))
     
@@ -41,6 +46,8 @@
 * `strace nginx 2>&1 | grep conf`
 * `locate nginx.conf`
 * 查看磁盘占用 `df -h`
+* 查看当前目录下显示每个文件和目录的磁盘使用空间 `du -sh *`
+* 显示内存的使用情况 `free`
 * 查看内核 `uname -a` `cat /proc/version`
 * 查看发行版信息 `cat /etc/issue`
 * 更改ssh登录端口 `vim /etc/ssh/sshd_config` && `systemctl restart sshd.service`
@@ -96,16 +103,15 @@ graphical.target: 类似inittab 5
     `/usr/local/php/bin/php /data/wwwroot/app/yii socket start -d`
     * 编写shell放至`/etc/init.d`下即会开机加载运行... (`/etc/init.d`为`/etc/rc.d/init.d`的软连接)
     * 使用`chkconfig`将shell注册为系统服务
-    
-* mac不借助第三方实现NTFS分区的可写挂载...[参考](https://www.cnblogs.com/thatsit/p/6218117.html)
-```
-# 先卸载后挂载
-# 磁盘工具找到硬盘的设备名 此处为`disk4s2`
 
-# unmount 或选择推出...
-sudo umount /Volumes/disk4s2
+* 查找含有BOM头的文件 `grep -rl $'\xEF\xBB\xBF' .`
 
-sudo mkdir /Volumes/kkk
-sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk4s2 /Volumes/kkk/
-open /Volumes/kkk
-```
+* `apt-cache search repo`  
+  `apt-cache show repo`
+
+* 通过`apt-file`查找命令所在的包
+    ```
+    apt-get install apt-file
+    apt-file update
+    apt-file search shell
+    ```

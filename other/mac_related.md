@@ -25,3 +25,28 @@
     5、打开`PHPSTORM`选择`Activation code`输入`http://idea.lanyus.com/`获得的注册码
 
 * Mac认为已损坏的文件...使用命令`sudo spctl --master-disable`信任所有来源...
+
+* 挂载移动硬盘
+    ```
+    // 查看已挂载的硬盘文件
+    mount | grep ntfs
+    // 卸载该文件
+    umount /dev/disk3s2
+    // 将硬盘再次挂载至本地一个已存在的目录
+    mount_ntfs -o rw,nobrowse /dev/disk3s2 ~/ntfs
+    // 若想用finder浏览
+    open ~/ntfs
+    ```
+    
+* mac不借助第三方实现NTFS分区的可写挂载...[参考](https://www.cnblogs.com/thatsit/p/6218117.html)
+    ```
+    # 先卸载后挂载
+    # 磁盘工具找到硬盘的设备名 此处为`disk4s2`
+    
+    # unmount 或选择推出...
+    sudo umount /Volumes/disk4s2
+    
+    sudo mkdir /Volumes/kkk
+    sudo mount -t ntfs -o rw,auto,nobrowse /dev/disk4s2 /Volumes/kkk/
+    open /Volumes/kkk
+    ```

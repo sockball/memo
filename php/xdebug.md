@@ -11,3 +11,5 @@
     * `Languages & Frameworks > PHP`下配置PHP解释器`CLI Interpreter`，其中配置会自动读取`解释器目录/../conf/php.ini`...且似乎不能自己指定
     * 右键根目录的`yii`文件选择`Debug yii`
     * `Arguments`中配置要debug的命令参数等等
+
+* 截止2019.04.26 `xdebug2.7.0`似乎在`phpstorm 2018.1`版本中无法使用...仅支持`2.6.1`以下...

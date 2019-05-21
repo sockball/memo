@@ -81,6 +81,7 @@ e.g.:
 `git update-index --no-assume-unchanged xxxx.conf`
 
 * 跳过工作树选项： `--skip-worktree` [以上2个选项参考](https://www.zhihu.com/question/25234996)
+* 查找被忽略的文件 `git ls-files -v | grep '^h\ '`
 
 * `git push error`:`Failed to connect to 127.0.0.1 port #port`  
   检查端口占用 `lsof -i:#port`  
@@ -94,6 +95,7 @@ e.g.:
 
 * [参考](https://www.cnblogs.com/tocy/p/git-stash-reference.html)  
 `git stash` 当前工作目录贮存起来以待恢复  
+`git stash save '备注'`  
 `git stash pop` 应用并删除第一个stash  
 `git stash apply`应用指定stash(不会删除, 默认stash@{0})  
 `git stash list`查看现有stash  
@@ -101,3 +103,6 @@ e.g.:
 `git stash clear`删除所有stash  
 `git stash show`查看指定stash file change  
 `git stash show -p`查看指定stash全部文件的diff
+
+* 创建一个空分支使用`--orphan`选项 不会继承当前分支
+`git checkout --orphan gh-pages`

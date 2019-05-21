@@ -47,6 +47,8 @@
 * [icon图标](https://segmentfault.com/a/1190000012213278)
 * [debug javascript with chrome devtools](https://codeburst.io/learn-how-to-debug-javascript-with-chrome-devtools-9514c58479db)
 * [Linux命令搜索引擎](https://wangchujiang.com/linux-command/)
+* [V8JS扩展](https://blog.ni-co.moe/public/558.html)
+* [多语言编码的Content-Disposition定义](https://www.jianshu.com/p/c6a5adbc8dda)
 
 ## Other
 * [谷歌云申请](https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/)
@@ -69,6 +71,9 @@
 * [多人在线白板](https://wbo.openode.io/)
 * [github oauth授权范围scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/)
 * [ping工具](https://tools.ipip.net/ping.php)
+* [在线制作数据库关系工具](https://dbdiagram.io)
+* [软件版本周期](https://zh.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E9%80%B1%E6%9C%9F)
+* [如何加固linux服务器](https://acuario.xyz/how-to-secure-your-linux-server/)
 
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)
@@ -94,6 +99,15 @@
 * [2018十大最佳笔记本](https://www.techradar.com/news/mobile-computing/laptops/best-laptops-1304361)
 * [概念性页面加载动画](https://medium.com/@ann.green/loading-indicators-e9d9ac9680b)
 * [自动生成logo](https://mybrandnewlogo.com/)
+* [react-router4.4因依赖错误调至5](https://reacttraining.com/blog/react-router-v5/#why-the-major-version-bump)
+* [一言](https://hitokoto.cn)
+* [996ICU](https://996.icu/#/zh_CN)
+* [Star Wars Asciimation](http://www.asciimation.co.nz/)(或`telnet towel.blinkenlights.nl`)
+* [隔着玻璃晒太阳无用](https://www.nytimes.com/2019/02/08/well/live/does-sunlight-through-glass-provide-vitamin-d.html)(周刊52期)
+* [996.icu事件](https://www.weibo.com/tv/v/Hp9hqmUGK)
+* [服务器消息推送至微信的工具](https://sc.ftqq.com/3.version)
+* [PI API](https://pi.delivery//#apipi_get)
+* [如何能正常获取17track物流网站的物流信息](https://sergiojune.com/2019/04/04/17track_last_event_id/)
 
 ## To Read
 * [Linux就该这么学](https://www.linuxprobe.com/chapter-07.html)
