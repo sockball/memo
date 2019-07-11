@@ -74,6 +74,7 @@
 * [在线制作数据库关系工具](https://dbdiagram.io)
 * [软件版本周期](https://zh.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E9%80%B1%E6%9C%9F)
 * [如何加固linux服务器](https://acuario.xyz/how-to-secure-your-linux-server/)
+* [windows下git的LF/CRLF警告问题](https://www.jianshu.com/p/450cd21b36a4)
 
 ## Funny
 * [emoji简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)
